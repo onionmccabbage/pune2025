@@ -1,4 +1,5 @@
 ### CSS Exercise
+* Create a new stylesheet and add a link to it in the HTML document
 
 * declare styles for 
     * the body background-color

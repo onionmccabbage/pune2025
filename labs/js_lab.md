@@ -1,5 +1,6 @@
 ### JavaScript Exercise
 
+* Create a new script file and add a &lt;script&gt; tag in your HTML document
 * Write a function to handle the form button click event
 * In the HTML document, add an 'onlick()' event handler to the button
 * Remember to prevent the default form behviour
