@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARIA Examples</title>
+</head>
+
+<body>
+    <form>
+        <label id="rangeLabel" for="rangeText">Travel within</label> =
+        <input id="rangeText" aria-labelledby="rangeLabel rangeText rangeUnit">
+        <span id="rangeUnit">days</span>
+        <hr/>
+        <label for="fromText">From airport:</label>
+        <input id="fromText" aria-describedby="fromDescriptor">
+        <span id="fromDescriptor">Airport you're travelling from</span>
+
+    </form>
+</body>
+
+</html>
