@@ -9,8 +9,8 @@
 * Append this string to the output monitor element
 
 * If time, every time the user clicks the button, append their choices to a list (or your own UX choice). You will probably use 
-- document.createElement()
-- .setAttribute() or .innerHTML
-- .appendChild() 
+    - document.createElement()
+    - .setAttribute() or .innerHTML
+    - .appendChild() 
 
 * Explore using &lt;input type='range' /&gt; for the cost form field
