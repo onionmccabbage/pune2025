@@ -6,6 +6,21 @@
 
     https://jsonplaceholder.typicode.com/users/3
 
+    <table>
+        <tr>
+            <td>Item</td><td>Price</td><td>Quantity</td>
+        </tr>
+        <tr>
+            <td>Mango</td><td>INR10</td><td>2</td>
+        </tr>
+        <tr>
+            <td>Jackfruit</td><td>INR20</td><td>20</td>
+        </tr>
+        <tr>
+            <td>Cashew</td><td>INR80</td><td>200</td>
+        </tr>
+    </table>
+
     <select id="stockCode">
         <option selected disabled>Please choose a stock</option>
         <option value="BSE">BSE Ltd</option>
