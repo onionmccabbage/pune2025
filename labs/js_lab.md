@@ -6,8 +6,8 @@
 * Remember to prevent the default form behviour
 
 * Within the event handler, grab the values of the chosen country and cost from the document (you will need to give each of the form elements an id)
-* Build a nice string containing the values
-* Append this string to the output monitor element
+* Build a nice string containing the chosen values
+* Append this string to the 'output' element in the web document
 
 * If time, every time the user clicks the button, append their choices to a list (or your own UX choice). You will probably use 
     * document.createElement()
