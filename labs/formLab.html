@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Form</title>
+</head>
+<body>
+    <main>
+        <form>
+            <!-- ask the user to select a country -->
+            <select required>
+                <option selected disabled value="">Please choose a country</option>
+                <option value="IND">India</option>
+                <option value="CAN">Canada</option>
+                <option value="FR">France</option>
+                <option value="IRL">Ireland</option>
+                <option value="DEU">Germany</option>
+                <option value="THA">Thailand</option>
+                <option value="MY">Malaysia</option>
+            </select> 
+            <br/>
+            <!-- ask the user to enter a cost between 0 and 100 -->
+            <input type="number" placeholder="cost" required
+                step="10" min="0" max="100" />
+            <button>
+                Go
+            </button>
+        </form>
+        <hr/>
+        <section>
+            <p id="output">watch here...</p>
+        </section>
+    </main>
+</body>
+</html>
