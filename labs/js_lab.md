@@ -9,9 +9,9 @@
 * Build a nice string containing the chosen values
 * Append this string to the 'output' element in the web document
 
-* If time, every time the user clicks the button, append their choices to a list (or your own UX choice). You will probably use 
+* If you have time try this: every time the user clicks the button, append their choices to a list (or your own UX choice). You will probably use 
     * document.createElement()
     * .setAttribute() or .innerHTML
     * .appendChild() 
         
-* Explore using &lt;input type='range' /&gt; for the cost form field
+* Explore using &lt;input type='range' /&gt; for the 'cost' form field. How can you show the value represented by the 'range' form field?
