@@ -11,7 +11,6 @@ Get hold of a copy of the 'formLab.html' document from this repository
 
 * If you have time try this: every time the user clicks the button, append their choices to a list (or your own UX choice). You will probably use 
     * document.createElement()
-    * .setAttribute() or .innerHTML
-    * .appendChild() 
-        
+    * .appendChild() or .innerHTML
+    * .setAttribute()  
 * Explore using &lt;input type='range' /&gt; for the 'cost' form field. How can you show the value represented by the 'range' form field?
