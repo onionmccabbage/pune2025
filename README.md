@@ -6,6 +6,8 @@
 
     https://jsonplaceholder.typicode.com/users/3
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
     <table>
         <tr>
             <td>Item</td><td>Price</td><td>Quantity</td>
