@@ -34,7 +34,12 @@
     <article>
         <section>
             <h3>Conventions and Best Practice</h3>
-            <p>There are traditional ways we do some things and good reasons for doing other things</p>
+            <p>There are traditional ways we do some things<br/> and good reasons for doing other things</p>
+            <hr/>
+            <div>
+                <p>Be careful with <span>'div'</span> - accessibility doesn't understand them</p>
+            </div>
+            <hr/>
             <h4>Some Conventions</h4>
             <ol>
                 <li>Object naming (CamelCase, lower)</li>
@@ -47,17 +52,23 @@
                 <li>Make everything immutable unless it needs to change</li>
             </ul>
         </section>
+        <!-- tables are useful for organizing data -->
         <table>
+            <thead>
             <tr>
-                <td>Item</td>
-                <td>Price</td>
-                <td>Quantity</td>
+                <th>Item</th>
+                <th>Price</th>
+                <th>Quantity</th>
             </tr>
+            </thead>
+            <tbody>
             <tr>
                 <td>Mango</td>
-                <td>INR10</td>
+                <!-- be careful with encodings - not all users will see the exact characters -->
+                <td>&#8377;10</td>
                 <td>2</td>
             </tr>
+
             <tr>
                 <td>Jackfruit</td>
                 <td>INR20</td>
@@ -68,6 +79,7 @@
                 <td>INR80</td>
                 <td>200</td>
             </tr>
+            </tbody>
         </table>
     </article>
     <footer>&copy; 2025 read our legal notice</footer>
