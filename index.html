@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to HTML and CSS</title>
 </head>
+
 <body>
     <!--- semantic tags are really useful for accessibility -->
     <header>
@@ -12,9 +14,9 @@
     </header>
     <nav>
         <!-- hyperlinks -->
-         <a href="https://go.neueda.comcitipune">Resources</a>
-         <a href="https://labs.neueda.com">Labs</a>
-         <a href="https://bbc.co.uk/weather/1259229">Weather</a>
+        <a href="https://go.neueda.comcitipune">Resources</a>
+        <a href="https://labs.neueda.com">Labs</a>
+        <a href="https://bbc.co.uk/weather/1259229">Weather</a>
     </nav>
     <article>
         <main>
@@ -23,11 +25,52 @@
             </section>
             <p>Images (diagrams, figures, photos) should have alt text</p>
             <figure>
-                <img src="https://placehold.co/40x30/orange/green" />
+                <img src="https://placehold.co/40x30/orange/green" alt="image with green and orange colours" />
             </figure>
+            <!-- most images will not be inside 'figure' -->
+            <!-- <img src="assets/Holi-party-in-Pune.jpg" alt="YAAAAAAAAAY!" /> -->
         </main>
     </article>
-    <article></article>
+    <article>
+        <section>
+            <h3>Conventions and Best Practice</h3>
+            <p>There are traditional ways we do some things and good reasons for doing other things</p>
+            <h4>Some Conventions</h4>
+            <ol>
+                <li>Object naming (CamelCase, lower)</li>
+                <li>Local date-time format</li>
+            </ol>
+            <h4>Some Best Practices</h4>
+            <ul>
+                <li>Write 'DRY' code</li>
+                <li>Always consider accessibility</li>
+                <li>Make everything immutable unless it needs to change</li>
+            </ul>
+        </section>
+        <table>
+            <tr>
+                <td>Item</td>
+                <td>Price</td>
+                <td>Quantity</td>
+            </tr>
+            <tr>
+                <td>Mango</td>
+                <td>INR10</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>Jackfruit</td>
+                <td>INR20</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>Cashew</td>
+                <td>INR80</td>
+                <td>200</td>
+            </tr>
+        </table>
+    </article>
     <footer>&copy; 2025 read our legal notice</footer>
 </body>
+
 </html>
