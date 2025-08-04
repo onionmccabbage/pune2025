@@ -1,22 +1,22 @@
 // JavaScript is ALWAYS plain text that gets interpreted
-var a = 1   // we tend to avoid this now
-let b = 2   // declare a variable (mutable)
-const c = 3 // an immutable value
+var a = 1;   // we tend to avoid this now
+let b = 2;   // declare a variable (mutable)
+const c = 3; // an immutable value
 // JavaScript is loosley data typed
-a = b/c
-b = a*b
+a = b/c;
+b = a*b;
 // also boolean, null, undefined, string
 // any value can be assigned a diofferent data type
-a = 'hello'
-console.log(a, b, c, typeof(a), typeof(b), typeof(c))
+a = 'hello';
+console.log(a, b, c, typeof(a), typeof(b), typeof(c));
 
 // complex data types (structures)
 // NB the members of an array or object can be of ANY data type
-let colors = ['Yellow', 'Blue', 'Magenta', 'Brown', 'Black'] // array
+let colors = ['Yellow', 'Blue', 'Magenta', 'Brown', 'Black']; // array
 // we declare an object as a collection of key:value pairs of any data type
 let pune = {'country':'India', 'city':'Pune', 'state':'Maharashtra', 'area':516.18}
 // access array members using [] and access object members using dot-notation or ['']
-console.log(colors, pune, colors[3], pune.area, pune['country'])
+console.log(colors, pune, colors[3], pune.area, pune['country']);
 
 // there are several ways to write a function
 function doStuff(){} // old way
@@ -28,11 +28,11 @@ const fnD = (x, y)=>{
     return x**y // ** means raise to the power
 } 
 
-console.log(fnA(3), fnD(4,3))
+console.log(fnA(3), fnD(4,3));
 
 // date and time
-d = new Date()
-t = Date.now()
+d = new Date();
+t = Date.now();
 // we can see these
 console.log(d.toString(), d.getHours()) // or getMinutes etc.
 
@@ -65,21 +65,33 @@ showInfo(pune) // here we invoke the function
 const {country, city, ...rest} = pune
 console.log(country, city, rest)
 
-// looping
 
 // use spread a bit more in a practical example (similar to using React)
 const moreColors = ['Pink', 'Cyan', 'Saffron']
 colors.push('Purple')
 colors.pop()
 colors.push(...moreColors) // the 'moreColors' array will be spread out into members of the 'colors' array
-console.log(colors)
+console.log(colors);
 
 // what about copies and duplicates
-let mumbai = {...pune, 'city':'Mumbai', 'area':603.4}
-
-console.log(mumbai)
-
+let mumbai = {...pune, 'city':'Mumbai', 'area':603.4};
+console.log(mumbai);
 // be careful with duplicates
-let bombay = mumbai // by reference
-bombay.city = 'Bombay'
-console.log(mumbai)
+let bombay = mumbai;// by reference
+bombay.city = 'Bombay';
+console.log(mumbai);
+
+// using Math.random()
+const holi = ()=>{
+    // return a random color from our colors array
+    let numColors = colors.length // a property not a function
+    let n = ( Math.floor (Math.random()*numColors) )
+    return colors[n]
+}
+
+// looping (iterating)
+for (let i=0; i<64; i++) {
+    let c = holi()
+    console.log(c)
+}
+
