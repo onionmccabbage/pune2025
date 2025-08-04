@@ -85,13 +85,30 @@ console.log(mumbai);
 const holi = ()=>{
     // return a random color from our colors array
     let numColors = colors.length // a property not a function
-    let n = ( Math.floor (Math.random()*numColors) )
+    let n = ( Math.ceil (Math.random()*numColors) )
     return colors[n]
 }
 
+// old-skool string building
+let m = 'hello' // all JS strings are immutable
+m = 'wotcha'
+let n = ' India'
+let greet = m+n
+
 // looping (iterating)
 for (let i=0; i<64; i++) {
-    let c = holi()
-    console.log(c)
+    // we have try catch and finally
+    try {
+        let c = holi()
+        if (c==undefined){
+            throw new Error(`Color cannot be undefined`)
+        }
+        else {
+            console.log(c)
+        }
+    }
+    catch(err){
+        console.log(`Not colorful enough ${err}`)
+    }
 }
 
