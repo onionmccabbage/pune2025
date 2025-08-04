@@ -1,0 +1,32 @@
+/* we write styles in a style sheet */
+/* tag styles automatically apply to the relevant tags */
+header {
+    height: 60px;
+    background-color: #f4c430;
+    color: darkcyan;
+}
+
+main {
+    background-color: wheat;
+}
+
+article {
+    color: #000000;
+    background-color: white;
+}
+footer {
+    color: linen;
+    background-color: green;
+    font-family: Arial, Helvetica, sans-serif;
+}
+p {
+    background-color: burlywood;
+    padding: 6px; /* padding is inside the border */
+    border: solid 2px #39f;
+    margin: 12px; /* margin is outside the border */
+}
+
+/* or black */
+/* class styles need to be manually applied but can be used repeatedly */
+.quantity {color: #336699 ;}
+/* id styles need to be manually applied ONCE EACH */
