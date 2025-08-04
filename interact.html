@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using JavaScript for interactions</title>
+</head>
+<body>
+    <article>
+        <h3>User Interaction and JavaScript</h3>
+        <aside id="shopping">watch here...</aside>
+        <hr/>
+        <section>
+            <!-- the 'form' tag is optional but does enable browser-validation -->
+            <form>
+                <input placeholder="Stock Code" id="stockCode" required />
+                <!-- we may add an event listener to ANY html tag -->
+                <button onclick="handleButton()">Go</button>
+            </form>
+        </section>
+    </article>
+    <!-- we may write JS within a document but it is more usual to link to an external script -->
+    <script src="main.js"></script>
+</body>
+</html>
