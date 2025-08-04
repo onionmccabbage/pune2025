@@ -17,3 +17,29 @@ let colors = ['Yellow', 'Blue', 'Magenta', 'Brown', 'Black'] // array
 let pune = {'country':'India', 'city':'Pune', 'state':'Maharashtra', 'area':516.18}
 // access array members using [] and access object members using dot-notation or ['']
 console.log(colors, pune, colors[3], pune.area, pune['country'])
+
+// there are several ways to write a function
+function doStuff(){} // old way
+const fnA = x => x*x     // very terse way to write a function
+const fnB = (x)=>x*x     // if there are NO arguments or more than ONE argument, you must do this
+const fnC = x =>{ return x*x } // if we use {} we consider using return
+// this is the most clear version
+const fnD = (x, y)=>{ 
+    return x**y // ** means raise to the power
+} 
+
+console.log(fnA(3), fnD(4,3))
+
+// date and time
+d = new Date()
+t = Date.now()
+// we can see these
+console.log(d.toString(), d.getHours()) // or getMinutes etc.
+
+// conditionals
+
+
+// looping
+
+
+// rest and spread
