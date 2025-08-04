@@ -56,9 +56,23 @@ const showInfo = (o)=>{
     let {country, city, state, area} = o
     // back-tick syntax lets us inject content into a string using ${}
     console.log(`${city} is in ${state}, part of ${country}, with an area of ${area} square km`)
+    // also
+    console.log(`${o.city} is in ${o.state}, part of ${o.country}, with an area of ${o.area} square km`)
 }
 showInfo(pune) // here we invoke the function
 
+// the rest operator ... (ellipsis)
+const {country, city, ...rest} = pune
+console.log(country, city, rest)
+
 // looping
+
+// use spread a bit more in a practical example (similar to using React)
+const moreColors = ['Pink', 'Cyan', 'Saffron']
+colors.push('Purple')
+colors.pop()
+colors.push(...moreColors) // the 'moreColors' array will be spread out into members of the 'colors' array
+console.log(colors)
+
 
 
