@@ -1,4 +1,4 @@
-### Here are some snippets
+### Here are some snippets:
 
     https://www.bbc.co.uk/weather/125922
 
