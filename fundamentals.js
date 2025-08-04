@@ -36,10 +36,29 @@ t = Date.now()
 // we can see these
 console.log(d.toString(), d.getHours()) // or getMinutes etc.
 
-// conditionals
+// conditionals (if else)
+let msg = `Have a good morning`
+// also < > <= >= != ==
+// double-equals CHECKS equality single equals SETS equality
+if (d.getHours() > 18) {
+    msg = `Good evening`
+} else if (d.getHours() > 12) {
+    msg = `May your afternoon be good`
+}
+console.log(msg)
 
+// rest and spread
+// the spread operator ...
+let [yel, blu, mag, bro, bla] = [...colors]
+console.log(yel, mag)
+// we can use spread to destructure an object
+const showInfo = (o)=>{
+    let {country, city, state, area} = o
+    // back-tick syntax lets us inject content into a string using ${}
+    console.log(`${city} is in ${state}, part of ${country}, with an area of ${area} square km`)
+}
+showInfo(pune) // here we invoke the function
 
 // looping
 
 
-// rest and spread
