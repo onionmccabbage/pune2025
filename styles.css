@@ -28,5 +28,11 @@ p {
 
 /* or black */
 /* class styles need to be manually applied but can be used repeatedly */
+/* class style names always begin with a period . */
 .quantity {color: #336699 ;}
+
 /* id styles need to be manually applied ONCE EACH */
+/* id style names always begin with # */
+#info {
+    color: darkred;
+}
