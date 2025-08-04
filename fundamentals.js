@@ -74,5 +74,12 @@ colors.pop()
 colors.push(...moreColors) // the 'moreColors' array will be spread out into members of the 'colors' array
 console.log(colors)
 
+// what about copies and duplicates
+let mumbai = {...pune, 'city':'Mumbai', 'area':603.4}
 
+console.log(mumbai)
 
+// be careful with duplicates
+let bombay = mumbai // by reference
+bombay.city = 'Bombay'
+console.log(mumbai)
