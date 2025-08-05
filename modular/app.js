@@ -13,6 +13,7 @@
 
 // write the line to import the function from DataFunctions.js
 import { getAllPayments } from "./DataFunctions.js"
+import getAllAPIPayments from "./paymentAPIaccess.js"
 
 // export default function app(){
 const app=()=>{
@@ -40,6 +41,26 @@ const app=()=>{
     }
     // invoke the function
     useMockData()
+    // here we will use the API call function to get live data
+    const waitForLiveData = ()=>{
+        // call the imported function
+        getAllAPIPayments() // it will return a response object (as a promise)
+            // we resolve the promise
+            .then( (response)=>{
+                return response.json()
+            } ) // we may chain .then functions
+            .then( (data)=>{
+                console.log(data)
+                // we can put the received data imto the web document
+                let c = document.getElementById('output')
+                c.innerHTML = data // the data is json
+            } )
+    }
+    // invoke our function to get the remote data
+    waitForLiveData()
+
+
+
 }
 // we may choose ot export as a default
 export default app
