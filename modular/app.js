@@ -59,8 +59,9 @@ const app=()=>{
     // invoke our function to get the remote data
     waitForLiveData()
 
-
-
+    // javascript has useful timers we can use
+    // setTimeout(()=>{}, 5)
+    // setInterval()
 }
 // we may choose to export as a default
 export default app
