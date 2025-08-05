@@ -53,7 +53,7 @@ const app=()=>{
                 console.log(data)
                 // we can put the received data imto the web document
                 let c = document.getElementById('output')
-                c.innerHTML = data // the data is json
+                c.innerHTML = JSON.stringify(data) 
             } )
     }
     // invoke our function to get the remote data
@@ -62,7 +62,7 @@ const app=()=>{
 
 
 }
-// we may choose ot export as a default
+// we may choose to export as a default
 export default app
 
 
