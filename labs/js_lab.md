@@ -11,8 +11,9 @@ Get hold of a copy of the 'formLab.html' document from this repository
 
 * As you develop your code see if there are opportunities to split your JavaScript across modules
 
-* If you have time try this: every time the user clicks the button, append their choices to a list (or your own UX choice). You will probably use 
+* If you have time try this: every time the user clicks the button, append their choices to am unordered list (or your own UX choice). You will probably use 
     * document.createElement()
     * .appendChild() or .innerHTML
-    * .setAttribute()  
-* Explore using &lt;input type='range' /&gt; for the 'cost' form field. How can you show the value represented by the 'range' form field?
+
+* Explore using &lt;input type='range' /&gt; for the 'cost' form field. 
+* How can you show the value represented by the 'range' form field?
