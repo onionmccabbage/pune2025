@@ -14,7 +14,8 @@
 // write the line to import the function from DataFunctions.js
 import { getAllPayments } from "./DataFunctions"
 
-export const app = ()=>{
+// export default function app(){
+const app=()=>{
     console.log(`App is running`)
     // we will need to acces some remote data
     // mock data is similar to the logic of real data. But it is fake
@@ -25,10 +26,9 @@ export const app = ()=>{
         const data = getAllPayments() // load up our mock data array of objects
         console.log(data)
     }
-
-
-
 }
+
+export default app
 
 
 
