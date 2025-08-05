@@ -25,6 +25,18 @@ const app=()=>{
     const useMockData = ()=>{
         const data = getAllPayments() // load up our mock data array of objects
         console.log(data)
+        // first, get hold of the relevant part of the web document
+        let c = document.getElementById('output')
+        // then construct a nice piece of content
+        let data_j = JSON.stringify(data)
+        // if we need to converts JSON text into a JS structure
+        let o = JSON.parse(data_j)
+        // JSON is JavaScript Object Notation. NB JSON is NOT JavaScript
+        // JSON is always just plain text
+        // JSON is a collection of key:value pairs
+
+        // inject our new content into the web document
+        c.innerHTML = data_j // put the text inmto the document
     }
     // invoke the function
     useMockData()
