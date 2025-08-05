@@ -6,6 +6,8 @@ header {
     color: darkcyan;
 }
 
+h2 {color: blue;}
+
 main {
     background-color: wheat;
 }
@@ -30,9 +32,13 @@ p {
 /* class styles need to be manually applied but can be used repeatedly */
 /* class style names always begin with a period . */
 .quantity {color: #336699 ;}
+.wibble {color: red}
 
 /* id styles need to be manually applied ONCE EACH */
 /* id style names always begin with # */
+
 #info {
     color: darkred;
 }
+
+#doobiedoo {color: green;}
