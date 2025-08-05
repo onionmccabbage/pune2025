@@ -12,7 +12,7 @@
 // and yet... we tend to combine them all up again into one efficient single deliverable
 
 // write the line to import the function from DataFunctions.js
-import { getAllPayments } from "./DataFunctions"
+import { getAllPayments } from "./DataFunctions.js"
 
 // export default function app(){
 const app=()=>{
@@ -22,12 +22,14 @@ const app=()=>{
     // test functionality
     // do not affect the real data
     // maybe the real data is not ready yet!!!!
-    const ueMockData = ()=>{
+    const useMockData = ()=>{
         const data = getAllPayments() // load up our mock data array of objects
         console.log(data)
     }
+    // invoke the function
+    useMockData()
 }
-
+// we may choose ot export as a default
 export default app
 
 
