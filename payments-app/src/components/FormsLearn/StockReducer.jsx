@@ -16,6 +16,9 @@ const StockformReducer = ()=>{
     const handleChange = (e)=>{
         dispatch( { field:e.target.id, value:e.target.value } )
     }
+    //some constants to use in the web document
+    const qtyMin = 0
+    const qtyMax = 100
 
     // UI
     return (
@@ -34,12 +37,13 @@ const StockformReducer = ()=>{
                 <input type="range" id="newStockQuantity" 
                     value={stock.qty}
                     min={qtyMin} max={qtyMax} 
-                    onChange={handleChange} /><span>{stockQty}</span>
+                    onChange={handleChange} /><span>{stock.qty}</span>
                 <button>Go </button>
             </form>
             <aside>
                 {/* we can monitor any stateful values */}
-                <p>Stock Code: {stockCode} Price:{stockPrice} Quantity {stockQty}</p>
+                <p>Stock Code: {stock.code} Price:{stock.price} 
+                    Quantity {stock.qty}</p>
             </aside>
         </section>
     )
