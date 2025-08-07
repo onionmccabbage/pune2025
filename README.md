@@ -33,3 +33,16 @@
         <option value="HAL">Hindustan Aeronautics Ltd</option>
         <option value="INFY">Infosys</option>
     </select>
+
+    <section>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Currency</th><th>Amount</th><th>Country</th><th>Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {/* an indexed iterable collection of table rows */}
+                </tbody>
+            </table>
+    </section>
