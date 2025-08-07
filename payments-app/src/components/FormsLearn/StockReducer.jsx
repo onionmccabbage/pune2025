@@ -1,8 +1,21 @@
+import { useReducer, useState } from "react"
 
 
 const StockformReducer = ()=>{
     // component logic
+    const initialStock = {'code':'', 'price':0, 'qty':1}
+    const formReducer = (state, data)=>{
+        return {
+            ...state, [data.field]:data.value
+        }
+    }
+    // we used to have state
+    // now we will use the reducer hook
+    const [stock, dispatch] = useReducer(formReducer, initialStock)
 
+    const handleChange = (e)=>{
+        dispatch( { field:e.target.id, value:e.target.value } )
+    }
 
     // UI
     return (
