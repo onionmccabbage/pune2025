@@ -29,7 +29,6 @@ const PaymentsPage = () => {
             );
     }
 
-
     // loading external data is a side effect
     // using [] means ese the effet once, on page load (and page refresh)
     useEffect(() => { loadData() }, []) // [] represents any state that should thrigger the effect
