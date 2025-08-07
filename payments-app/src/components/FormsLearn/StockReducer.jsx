@@ -32,7 +32,6 @@ const StockFormReducer = () => {
     // We should privide a UNIQUE key (provided automatically as 'index' of the array)
     const currentPortfolio = portfolio.map((s, index) => <li key={index}>{s.code} {s.price} {s.qty}</li>);
 
-
     // UI
     return (
         // CAREFUL - all components must have ONE root tag

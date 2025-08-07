@@ -10,8 +10,8 @@ const App = () => {
   return (
     <>
       <PageHeader />
-      {/* <Search />
-      <Transactions /> */}
+      {/* <Search />*/}
+      <Transactions /> 
       <StockFormReducer />
       <CountryForm />
     </>
