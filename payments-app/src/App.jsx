@@ -1,4 +1,5 @@
 import './App.css'
+import CountryForm from './components/FormsLearn/CountryForm';
 import StockForm from './components/FormsLearn/StockForm';
 import PageHeader from "./components/pageHeader/PageHeader";
 import Search from "./components/Search/Search";
@@ -11,6 +12,7 @@ const App = () => {
       {/* <Search />
       <Transactions /> */}
       <StockForm />
+      <CountryForm />
     </>
   )
 }
