@@ -11,13 +11,17 @@ const StockformReducer = ()=>{
             <form>
                 {/* in React form fields are 'controlled' */}
                 <input id="newStockCode" placeholder="Stock Code"
-                    onChange={changeStockcode} />
+                    value={stock.code}
+                    onChange={handleChange} />
                 {/* add a field for 'stockPrice' controlled by a stateful model 'stockPrice */}
-                <input type="number" id='newStockPrice' placeholder="Stock Price" 
-                    min="0" onChange={changeStockPrice}/>
+                <input type="number" id='newStockPrice' placeholder="Stock Price"
+                    value={stock.price} min="0" 
+                    onChange={handleChange}/>
                 {/* User Experience Principles: give feedback */}
-                <input type="range" id="newStockQuantity" value={stockQty}
-                    min={qtyMin} max={qtyMax} onChange={handleQuantity} /><span>{stockQty}</span>
+                <input type="range" id="newStockQuantity" 
+                    value={stock.qty}
+                    min={qtyMin} max={qtyMax} 
+                    onChange={handleChange} /><span>{stockQty}</span>
                 <button>Go </button>
             </form>
             <aside>
