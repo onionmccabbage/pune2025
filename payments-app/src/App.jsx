@@ -11,6 +11,9 @@ const App = () => {
     <>
       <PageHeader />
       {/* <Search />*/}
+      
+      
+      
       <Transactions /> 
       <StockFormReducer />
       <CountryForm />
