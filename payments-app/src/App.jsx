@@ -1,7 +1,7 @@
 import './App.css'
 import CountryForm from './components/FormsLearn/CountryForm';
 import StockFormStateful from './components/FormsLearn/StockFormStateful';
-import StockformReducer from './components/FormsLearn/StockReducer';
+import StockFormReducer from './components/FormsLearn/StockReducer';
 import PageHeader from "./components/pageHeader/PageHeader";
 import Search from "./components/Search/Search";
 import Transactions from "./components/Transactions/Transactions";
@@ -12,7 +12,7 @@ const App = () => {
       <PageHeader />
       {/* <Search />
       <Transactions /> */}
-      <StockformReducer />
+      <StockFormReducer />
       <CountryForm />
     </>
   )

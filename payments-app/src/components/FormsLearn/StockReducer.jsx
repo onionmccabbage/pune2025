@@ -1,7 +1,7 @@
 import { useReducer, useState } from "react"
 
 
-const StockformReducer = ()=>{
+const StockFormReducer = ()=>{
     // component logic
     const initialStock = {'code':'', 'price':0, 'qty':1}
     const formReducer = (state, data)=>{
@@ -26,15 +26,16 @@ const StockformReducer = ()=>{
         <section>
             <form>
                 {/* in React form fields are 'controlled' */}
-                <input id="newStockCode" placeholder="Stock Code"
+                {/* How I fixed it - changed ID to match stateful model */}
+                <input id="code" placeholder="Stock Code"
                     value={stock.code}
                     onChange={handleChange} />
                 {/* add a field for 'stockPrice' controlled by a stateful model 'stockPrice */}
-                <input type="number" id='newStockPrice' placeholder="Stock Price"
+                <input type="number" id='price' placeholder="Stock Price"
                     value={stock.price} min="0" 
                     onChange={handleChange}/>
                 {/* User Experience Principles: give feedback */}
-                <input type="range" id="newStockQuantity" 
+                <input type="range" id="qty" 
                     value={stock.qty}
                     min={qtyMin} max={qtyMax} 
                     onChange={handleChange} /><span>{stock.qty}</span>
