@@ -3,7 +3,7 @@ import { useState } from "react";
 const CountryForm = () => {
     const [countryCode, setCountryCode] = useState('') // no initial value
     const [countryName, setCountryName] = useState('') // no initial value
-    const [countryCurrency, setCountrycurrency] = useState('') // initial state is zero
+    const [countryCurrency, setCountryCurrency] = useState('') // initial state is zero
     const changeCountryCode = (e) => {
         const code = e.target.value;
         setCountryCode(code)
@@ -15,7 +15,7 @@ const CountryForm = () => {
 
     const changeCountryCurrency = (e) => {
         const currency = e.target.value;
-        setCountrycurrency(currency)
+        setCountryCurrency(currency)
     }
     return (
         <section>
