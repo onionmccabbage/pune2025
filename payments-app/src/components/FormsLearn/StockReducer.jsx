@@ -51,4 +51,4 @@ const StockFormReducer = ()=>{
 }
 
 
-export default StockformReducer
+export default StockFormReducer
