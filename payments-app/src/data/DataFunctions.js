@@ -23,6 +23,8 @@ export const getAllPaymentsFetchVersion = async () => {
         headers: new Headers(
             { 'Accept': 'application/json' })
     })
+    // debug...
+    console.log(transactionsPromise)
     return transactionsPromise
 }
 
